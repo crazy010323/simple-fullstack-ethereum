@@ -1,4 +1,4 @@
-# simple-fullstack-ethereum
+# Simple-fullstack-ethereum
 token creation, send/receive token, check balance
 
 # What we will be building
@@ -20,3 +20,17 @@ token creation, send/receive token, check balance
 
     Node.js installed on your local machine
     MetaMask Chrome extension installed in your browser
+
+# How to run
+- First, run the local hardhat environment
+    ```shell
+    npx hardhat node --network hardhat
+    ```
+- Then, deploy the smart contract on the running hardhat network
+    ```shell
+    npx hardhat run scripts/deploy.js --network localhost
+    ```
+- Finally, launch react project
+    ```shell
+    run npm start
+    ```
